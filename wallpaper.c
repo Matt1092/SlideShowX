@@ -12,14 +12,14 @@
 // Main function
 int main(void)
 {
-    char foldername[64];
+    char foldername[MAX_PATH];
     printf("C code application to spice up your desktop wallpapers\n");
     printf("Folder name: ");
     scanf_s("%s", foldername, sizeof(foldername));
     
 
     // Pointer to a wide character string
-    const wchar_t* file = L"C:\\Users\\mattm\\OneDrive\\Desktop\\whitecolour.png"; // Change this to the path of your image file
+    const wchar_t* file = L"C:\\Users\\mattm\\OneDrive\\Desktop\\forest.png"; // Change this to the path of your image file
 
 
     // Windows API function used to set system parameters. Sets desktop wallpaper
