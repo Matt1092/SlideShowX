@@ -48,9 +48,8 @@ int main(void)
         while ((ent = readdir(dir)) != NULL) {
             printf("%s\n", ent->d_name);
             // ADDED CODE
-            // quick hack, don't increment for . and ..
-            // TODO: check for file extension, if not an image file skip (png/jpeg/jpg/bmp/etc)
-            if ((strcmp(ent->d_name, ".") == 0) || (strcmp(ent->d_name, "..") == 0))
+            // Check for file extension, if not an image file skip (png/jpeg/jpg/bmp/etc)
+            if (!strstr(ent->d_name, "png") && !strstr(ent->d_name, "jpeg") && !strstr(ent->d_name, "jpg") && !strstr(ent->d_name, "btm"))
             {
                 continue;
             }
