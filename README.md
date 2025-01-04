@@ -51,3 +51,41 @@ Update time (in minutes): 5
 File path: C:\Users\YourUsername\Pictures\Wallpapers
 Press q to exit program
 ```
+
+## Code Explanation
+
+### Libraries and Constants
+
+- **Libraries**: Includes necessary libraries such as `windows.h`, `stdio.h`, `conio.h`, and `dirent.h`.
+- **Constants**: Defines constants for array sizing.
+
+### Main Function
+
+- **Initialization**: Declares and initializes variables for folder name, directory operations, image list, update time, etc.
+- **User Input**: Prompts the user for the update time and file path.
+- **Directory Reading**: Reads the specified directory and filters image files (PNG, JPEG, JPG, BMP).
+- **Original Wallpaper**: Stores the original wallpaper to revert upon exit.
+- **Slideshow Loop**: Updates the wallpaper at specified intervals and checks for user input to exit.
+
+### Functions Used
+
+- **SystemParametersInfoA**: Windows API function to get and set system parameters, including the desktop wallpaper.
+- **_kbhit** and **_getch**: Functions to detect keyboard input for exiting the program.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request or open an issue to discuss potential changes.
+
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- Inspired by the need to dynamically update desktop wallpapers.
+
+## Contact
+
+For any questions or suggestions, please contact your_email@example.com.
+
