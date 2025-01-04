@@ -20,8 +20,8 @@ This C program updates the user's desktop wallpaper in the form of a slideshow, 
 
 1. **Clone the Repository**
     ```sh
-    git clone https://github.com/yourusername/wallpaper-slideshow.git
-    cd wallpaper-slideshow
+    git clone https://github.com/Matt1092/WallpaperSlideshow.git
+    cd WallpaperSlideshow
     ```
 
 2. **Compile the Program**
