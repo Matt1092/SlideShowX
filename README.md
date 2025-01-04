@@ -52,13 +52,13 @@ File path: C:\Users\YourUsername\Pictures\Wallpapers
 Press q to exit program
 ```
 
-## Code Explanation
-# Libraries and Constants
+# Code Explanation
+## Libraries and Constants
 
     Libraries: Includes necessary libraries such as windows.h, stdio.h, conio.h, and dirent.h.
     Constants: Defines constants for array sizing.
 
-# Main Function
+## Main Function
 
     Initialization: Declares and initializes variables for folder name, directory operations, image list, update time, etc.
     User Input: Prompts the user for the update time and file path.
@@ -66,7 +66,7 @@ Press q to exit program
     Original Wallpaper: Stores the original wallpaper to revert upon exit.
     Slideshow Loop: Updates the wallpaper at specified intervals and checks for user input to exit.
 
-# Functions Used
+## Functions Used
 
     SystemParametersInfoA: Windows API function to get and set system parameters, including the desktop wallpaper.
     _kbhit and _getch: Functions to detect keyboard input for exiting the program.
