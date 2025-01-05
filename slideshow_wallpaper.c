@@ -48,7 +48,7 @@ int main(void)
     // Instructions for runtime
     printf("Press q to exit program");
 
-    // ADDED CODE
+    
     // Store the original wallpaper path
     if (!SystemParametersInfoA(SPI_GETDESKWALLPAPER, MAX_PATH, file_orig, 0))
     {
@@ -122,15 +122,11 @@ int main(void)
             }
         }
     }
-    // Revert back to original desktop file
-    //SystemParametersInfoA(SPI_GETDESKWALLPAPER, MAX_PATH, (void*)file_orig, 0);
-    //return 0;
 
-    // ADDED CODE
+
     // Restore the original wallpaper just in case the loop condition is not met
     if (!SystemParametersInfoA(SPI_SETDESKWALLPAPER, 0, (void*)file_orig, SPIF_UPDATEINFILE)) {
         printf("Failed to restore original wallpaper. Error code: %d\n", GetLastError());
     }
-
     return 0;
 }
