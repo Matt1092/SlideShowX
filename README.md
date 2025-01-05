@@ -27,7 +27,7 @@ This C program updates the user's desktop wallpaper in the form of a slideshow, 
 2. **Compile the Program**
     Use a C compiler to compile the program. For example, with GCC:
     ```sh
-    gcc -o wallpaper_slideshow wallpaper_slideshow.c -luser32
+    gcc -o wallpaper_slideshow slideshow_wallpaper.c -luser32
     ```
 
 3. **Run the Program**
