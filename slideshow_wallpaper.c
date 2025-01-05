@@ -1,4 +1,5 @@
 // Include necessary libraries
+#include <string.h>
 #include <windows.h>
 #include <stdio.h>
 #include <conio.h>
@@ -17,7 +18,7 @@
 // Main function
 int main(void)
 {
-    // Declare folder name as Array of characters
+    // Declare folder name as array of characters
     char foldername[MAX_PATH];
     // Include DIR functionalities
     DIR *dir;
@@ -46,6 +47,14 @@ int main(void)
 
     // Instructions for runtime
     printf("Press q to exit program");
+
+    // ADDED CODE
+    // Store the original wallpaper path
+    if (!SystemParametersInfoA(SPI_GETDESKWALLPAPER, MAX_PATH, file_orig, 0))
+    {
+        printf("Failed to get original wallpaper. Error code: %d\n", GetLastError());
+        return EXIT_FAILURE;
+    }
 
 
     // Use open directory for folder name
@@ -114,6 +123,14 @@ int main(void)
         }
     }
     // Revert back to original desktop file
-    SystemParametersInfoA(SPI_GETDESKWALLPAPER, MAX_PATH, (void*)file_orig, 0);
+    //SystemParametersInfoA(SPI_GETDESKWALLPAPER, MAX_PATH, (void*)file_orig, 0);
+    //return 0;
+
+    // ADDED CODE
+    // Restore the original wallpaper just in case the loop condition is not met
+    if (!SystemParametersInfoA(SPI_SETDESKWALLPAPER, 0, (void*)file_orig, SPIF_UPDATEINFILE)) {
+        printf("Failed to restore original wallpaper. Error code: %d\n", GetLastError());
+    }
+
     return 0;
 }
