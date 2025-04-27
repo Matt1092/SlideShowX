@@ -53,7 +53,7 @@ Press q to exit program
 ```
 Here is a video demonstration of SlideShowX in action:
 
-[![Watch the video](https://img.youtube.com/vi/x0mI-F7YL6Y/0.jpg)]([https://www.youtube.com/watch?v=x0mI-F7YL6Y](https://youtu.be/x0mI-F7YL6Y))
+[![Watch the video](https://img.youtube.com/vi/x0mI-F7YL6Y/0.jpg)](https://youtu.be/x0mI-F7YL6Y)
 
 ## Code Explanation
 
