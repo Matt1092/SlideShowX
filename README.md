@@ -53,11 +53,7 @@ Press q to exit program
 ```
 Here is a video demonstration of SlideShowX in action:
 
-[![Watch the video](https://img.youtube.com/vi/<VIDEO_ID>/0.jpg)](https://www.youtube.com/watch?v=<VIDEO_ID>)
-
-Replace `<VIDEO_ID>` with the actual ID of your YouTube video or provide a relative link to the video file if it's hosted in the repository.
-
-Let me know if you need help updating this section!
+[![Watch the video](https://img.youtube.com/vi/<VIDEO_ID>/0.jpg)]([https://www.youtube.com/watch?v=<VIDEO_ID>](https://youtu.be/x0mI-F7YL6Y))
 
 ## Code Explanation
 
